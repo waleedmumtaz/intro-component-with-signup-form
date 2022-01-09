@@ -79,7 +79,11 @@
             name="firstname"
             placeholder="First Name"
             bind:value={formFields.firstName}
-            class="outline outline-2 outline-gray-200 rounded-md px-5 py-3 w-full mb-1"
+            class={`${
+              formFieldErrors.firstName.length > 0
+                ? 'outline outline-2 outline-red-500'
+                : ''
+            } outline outline-2 outline-gray-200 rounded-md px-5 py-3 w-full mb-1`}
           />
           <img
             src="/assets/icon-error.svg"
@@ -100,7 +104,11 @@
             name="lastname"
             bind:value={formFields.lastName}
             placeholder="Last Name"
-            class="outline outline-2 outline-gray-200 rounded-md px-5 py-3 w-full mb-1"
+            class={`${
+              formFieldErrors.lastName.length > 0
+                ? 'outline outline-2 outline-red-500'
+                : ''
+            } outline outline-2 outline-gray-200 rounded-md px-5 py-3 w-full mb-1`}
           />
           <img
             src="/assets/icon-error.svg"
@@ -121,7 +129,11 @@
             name="email"
             placeholder="Email Address"
             bind:value={formFields.emailAddress}
-            class="outline outline-2 outline-gray-200 rounded-md px-5 py-3 w-full mb-1"
+            class={`${
+              formFieldErrors.emailAddress.length > 0
+                ? 'outline outline-2 outline-red-500'
+                : ''
+            } outline outline-2 outline-gray-200 rounded-md px-5 py-3 w-full mb-1`}
           />
           <img
             src="/assets/icon-error.svg"
@@ -142,7 +154,11 @@
             name="password"
             bind:value={formFields.password}
             placeholder="Password"
-            class="outline outline-2 outline-gray-200 rounded-md px-5 py-3 w-full mb-1"
+            class={`${
+              formFieldErrors.password.length > 0
+                ? 'outline outline-2 outline-red-500'
+                : ''
+            } outline outline-2 outline-gray-200 rounded-md px-5 py-3 w-full mb-1`}
           />
           <img
             src="/assets/icon-error.svg"
