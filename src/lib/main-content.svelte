@@ -54,23 +54,32 @@
   }
 </script>
 
-<main>
-  <div class="pt-20 px-5 font-poppins text-center">
-    <div class="text-white">
-      <h1 class="text-3xl font-bold mb-5">Learn to code by watching others</h1>
+<main class="flex-1 md:flex md:flex-col md:justify-center">
+  <div class="pt-20 px-5 font-poppins text-center md:grid md:grid-cols-2">
+    <div
+      class="text-white md:text-left md:flex md:flex-col md:justify-center md:max-w-xl md:mx-auto"
+    >
+      <h1 class="text-3xl md:text-6xl font-bold mb-5">
+        Learn to code by watching others
+      </h1>
       <p class="mb-10">
         See how experienced developers solve problems in real-time. Watching
         scripted tutorials is great, but understanding how developers think is
         invaluable.
       </p>
-      <div class="mb-8">
-        <button class="bg-cstm-accent-blue px-12 py-5 rounded-lg">
+    </div>
+    <div class="md:max-w-xl">
+      <div class="mb-8 text-white">
+        <button
+          class="bg-cstm-accent-blue px-12 py-5 rounded-lg w-full border-b-8 border-b-black border-opacity-20 cursor-default"
+        >
           <span class="font-semibold">Try it free 7 days</span> then $20/mo. thereafter
         </button>
       </div>
-    </div>
-    <div class="text-black bg-white text-left p-5 rounded-lg">
-      <form on:submit|preventDefault={submitHandler}>
+      <form
+        on:submit|preventDefault={submitHandler}
+        class="text-black bg-white text-left p-5 md:p-10 rounded-lg"
+      >
         <div class="relative">
           <label for="firstname" class="hidden">First Name</label>
           <input
@@ -172,16 +181,15 @@
           </p>
         </div>
         <button
-          type="submit"
-          class="bg-cstm-primary-green hover:brightness-110 text-white uppercase font-semibold w-full py-4 rounded-lg mb-5"
+          class="bg-cstm-primary-green hover:brightness-110 text-white uppercase font-semibold w-full py-4 rounded-lg border-b-8 border-b-black border-opacity-20 mb-5"
           >Claim your free trial</button
         >
+        <p class="text-gray-400 font-semibold text-center text-xs px-5">
+          By clicking the button, you are agreeing to our <span
+            class="text-cstm-primary-red">Terms and Services</span
+          >
+        </p>
       </form>
-      <p class="text-gray-400 font-semibold text-center text-xs px-5">
-        By clicking the button, you are agreeing to our <span
-          class="text-cstm-primary-red">Terms and Services</span
-        >
-      </p>
     </div>
   </div>
 </main>
