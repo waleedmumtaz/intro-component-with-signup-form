@@ -1,5 +1,7 @@
-<footer>
-  <div class="text-center pt-10 pb-5">
+<footer class="font-poppins">
+  <div
+    class="text-center p-3 bg-slate-600 text-white w-fit mx-auto rounded-t-lg mt-10"
+  >
     <p>
       Challenge by <a
         href="https://www.frontendmentor.io?ref=challenge"
@@ -11,7 +13,7 @@
       Coded by <a
         href="https://github.com/waleedmumtaz"
         target="_blank"
-        class="font-bold underline">Waleed Mumtaz</a
+        class="underline">Waleed Mumtaz</a
       >
     </p>
   </div>

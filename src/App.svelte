@@ -16,7 +16,7 @@
   />
 </svelte:head>
 
-<div>
+<div class="min-h-screen bg-intro-mobile bg-cstm-primary-red">
   <MainContent />
   <Footer />
 </div>

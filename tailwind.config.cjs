@@ -3,6 +3,10 @@ const config = {
 
   theme: {
     extend: {
+      backgroundImage: {
+        'intro-mobile': 'url(/assets/bg-intro-mobile.png)',
+        'intro-desktop': 'url(/assets/bg-intro-desktop.png)',
+      },
       colors: {
         cstm: {
           primary: {
